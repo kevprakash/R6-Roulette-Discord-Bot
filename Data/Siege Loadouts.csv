@@ -1,0 +1,75 @@
+Operator,Gadget SD,P1,P1 Shotgun,P2,P3,S1,S1 Shotgun,S2,S3,G1,G2,G3,G4,G5,G6,G7
+Striker,FALSE,M4,FALSE,M249,,ITA12S,TRUE,5.7 USG,,Hard Breach,EMP,Breach Pad,Claymore,Frag,Smoke,Stun
+Sledge,TRUE,M590A1,TRUE,L85A2,,P226 Mk 25,FALSE,,,Frag,EMP,Stun,None,None,None,None
+Thatcher,FALSE,M590A2,TRUE,L85A3,AR33,P226 Mk 25,FALSE,,,Claymore,None,Breach Pad,None,None,None,None
+Ash,TRUE,R4C,FALSE,G36C,,5.7 USG,FALSE,M45 Meusoc,,Claymore,None,Breach Pad,None,None,None,None
+Thermite,FALSE,M1014,TRUE,556XI,,5.7 USG,FALSE,M45 Meusoc,,Smoke,Stun,None,None,None,None,None
+Twitch,FALSE,SG-CQB,TRUE,417,F2,P9,FALSE,LFP586,,Claymore,Smoke,None,None,None,None,None
+Montagne,FALSE,Le Roc Shield,FALSE,,,P9,FALSE,LFP586,,Hard Breach,EMP,Smoke,None,None,None,None
+Glaz,FALSE,OTs-03,FALSE,,,Gonne-6,FALSE,PMM,Bearing 9,Smoke,Frag,Claymore,None,None,None,None
+Fuze,FALSE,Ballistic  Shield,FALSE,6P41,AK-12,PMM,FALSE,GSH-18,,Hard Breach,Smoke,Breach Pad,None,None,None,None
+Blitz,FALSE,Blitz Shield,FALSE,,,P12,FALSE,,,Smoke,None,Breach Pad,None,None,None,None
+IQ,FALSE,AUG A2,FALSE,552 Commando,G8A1,P12,FALSE,,,Frag,Claymore,Breach Pad,None,None,None,None
+Buck,TRUE,C8-SFW,FALSE,CAMRS,,Mk1 9mm,FALSE,,,Hard Breach,Stun,None,None,None,None,None
+Blackbeard,FALSE,SR-25,FALSE,MK17 CQB,,D-50,FALSE,,,Claymore,Frag,Stun,None,None,None,None
+Capitao,FALSE,PARA-308,FALSE,M249,,Gonne-6,FALSE,PRB92,,Hard Breach,EMP,Claymore,None,None,None,None
+Hibana,FALSE,Supernova,TRUE,Type-89,,Bearing 9,FALSE,P229,,Stun,None,Breach Pad,None,None,None,None
+Jackal,FALSE,ITA12L,TRUE,C7E,PDW9,ITA12S,TRUE,USP40,,Claymore,Smoke,None,None,None,None,None
+Ying,FALSE,Six12,TRUE,T-95 LSW,,Q-929,FALSE,,,Hard Breach,Smoke,None,None,None,None,None
+Zofia,TRUE,M762,FALSE,LMG-E,,RG15,FALSE,,,Claymore,None,Breach Pad,None,None,None,None
+Dokkaebi,FALSE,BOSG.12.2,FALSE,Mk14 EBR,,Gonne-6,FALSE,SMG-12,C75 Auto,Smoke,EMP,Stun,None,None,None,None
+Lion,FALSE,SG-CQB,TRUE,V308,417,P9,FALSE,LFP586,,Claymore,Frag,Stun,None,None,None,None
+Finka,FALSE,SASG-12,TRUE,Spear.308,6P41,PMM,FALSE,GSH-18,,Frag,Smoke,Stun,None,None,None,None
+Maverick,FALSE,M4,FALSE,AR-15.50,,1911 Tacops,FALSE,,,Claymore,Stun,Smoke,None,None,None,None
+Nomad,FALSE,AK-74M,FALSE,ARX200,,.44 Mag Semi,FALSE,PRB92,,Stun,None,Breach Pad,None,None,None,None
+Gridlock,FALSE,F90,FALSE,M249 SAW,,Super Shorty,TRUE,SDP 9mm,,Frag,EMP,Smoke,None,None,None,None
+Nokk,FALSE,Six12 SD,TRUE,FMG-9,,5.7 USG,FALSE,D-50,,Hard Breach,EMP,Frag,None,None,None,None
+Amaru,FALSE,Supernova,TRUE,G8A1,,ITA12S,TRUE,SMG-11,Gonne-6,Hard Breach,Stun,None,None,None,None,None
+Kali,FALSE,CSRX 300,TRUE,,,SPSMG9,FALSE,C75 Auto,P226 Mk 25,Claymore,None,Breach Pad,None,None,None,None
+Iana,FALSE,ARX200,FALSE,G36C,,Mk1 9mm,FALSE,Gonne-6,,Smoke,EMP,None,None,None,None,None
+Ace,FALSE,M1014,TRUE,AK-12,,P9,FALSE,,,Claymore,None,Breach Pad,None,None,None,None
+Zero,FALSE,SC3000K,FALSE,MP7,,5.7 USG,FALSE,Gonne-6,,Hard Breach,Claymore,None,None,None,None,None
+Flores,TRUE,SR-25,FALSE,AR33,,GSH-18,FALSE,,,Stun,Claymore,None,None,None,None,None
+Osa,FALSE,556XI,FALSE,PDW9,,PMM,FALSE,,,Frag,EMP,Claymore,None,None,None,None
+Sens,FALSE,POF-9,FALSE,417,,SDP 9mm,FALSE,,,Hard Breach,Claymore,Frag,None,None,None,None
+Grim,FALSE,SG-CQB,TRUE,552-Commando,,Bailiff 410,TRUE,P229,,Hard Breach,EMP,Claymore,None,None,None,None
+Brava,FALSE,PARA-308,FALSE,CAMRS,,Super Shorty,TRUE,USP40,,Smoke,Claymore,None,None,None,None,None
+Ram,TRUE,R4-C,FALSE,LMG-E,,ITA12S,TRUE,Mk1 9mm,,Stun,Smoke,None,None,None,None,None
+Deimos,FALSE,M590A1,TRUE,AK-74M,,.44 Vendetta,FALSE,,,Hard Breach,Frag,None,None,None,None,None
+Sentry,FALSE,M870,TRUE,Commando 9,,Super Shorty,TRUE,C75 Auto,,Barbed Wire,BP,Impact,Shield,Obs Blocker,C4,Prox
+Smoke,FALSE,M590A1,TRUE,FMG-9,,SMG-11,FALSE,P226 Mk 25,,Barbed Wire,Prox,None,None,None,None,None
+Mute,FALSE,M590A1,TRUE,MP5K,,SMG-11,FALSE,P226 Mk 25,,C4,BP,None,None,None,None,None
+Castle,FALSE,M1014,TRUE,UMP45,,Super Shorty,TRUE,M45 Meusoc,5.7 USG,BP,Prox,None,None,None,None,None
+Pulse,FALSE,M1014,TRUE,UMP45,,M45 Meusoc,FALSE,5.7 USG,,C4,Shield,Obs Blocker,None,None,None,None
+Doc,FALSE,SG-CQB,TRUE,MP5,P90,Bailiff 410,TRUE,LFP586,P9,BP,Barbed Wire,None,None,None,None,None
+Rook,FALSE,SG-CQB,TRUE,MP5,P90,LFP586,FALSE,P9,,Prox,Obs Blocker,Impact,None,None,None,None
+Kapkan,FALSE,SASG-12,TRUE,9x19VSN,,PMM,FALSE,GSH-18,,C4,BP,None,None,None,None,None
+Tachanka,FALSE,DP27,TRUE,9x19VSN,,PMM,FALSE,GSH-18,Bearing 9,Barbed Wire,Shield,Prox,None,None,None,None
+Jaeger,FALSE,M870,TRUE,416-C Carbine,,P12,FALSE,,,BP,Obs Blocker,None,None,None,None,None
+Bandit,FALSE,M870,TRUE,MP7,,P12,FALSE,,,Barbed Wire,C4,None,None,None,None,None
+Frost,FALSE,Super 90,TRUE,9mm C1,,ITA12S,TRUE,Mk1 9mm,,BP,Shield,None,None,None,None,None
+Valkyrie,FALSE,SPAS-12,TRUE,MPX,,D-50,FALSE,,,C4,None,Impact,None,None,None,None
+Caviera,FALSE,SPAS-15,TRUE,M12,,Luison,FALSE,,,Prox,Obs Blocker,Impact,None,None,None,None
+Echo,FALSE,Supernova,TRUE,MP5SD,,Bearing 9,FALSE,P229,,Shield,None,Impact,None,None,None,None
+Mira,FALSE,ITA12L,TRUE,Vector .45 ACP,,ITA12S,TRUE,USP40,,C4,Prox,None,None,None,None,None
+Lesion,FALSE,Six12 SD,TRUE,T-5 SMG,,Super Shorty,TRUE,Q-929,,BP,Obs Blocker,None,None,None,None,None
+Ela,FALSE,FO-12,TRUE,Scorpion Evo,,RG15,FALSE,,,Barbed Wire,Shield,Impact,None,None,None,None
+Vigil,FALSE,BOSG.12.2,FALSE,K1A,,SMG-12,FALSE,C75 Auto,,BP,None,Impact,None,None,None,None
+Maestro,FALSE,ACS12,TRUE,Alda 5.56,,Bailiff 410,TRUE,Keratos .357,,Barbed Wire,Obs Blocker,Impact,None,None,None,None
+Alibi,FALSE,ACS12,TRUE,Mx4 Storm,,Bailiff 410,TRUE,Keratos .357,,Prox,Obs Blocker,None,None,None,None,None
+Clash,FALSE,CCE Shield,FALSE,,,Super Shorty,TRUE,SPSMG9,P-10C,Barbed Wire,Shield,Impact,None,None,None,None
+Kaid,FALSE,TCSG12,TRUE,Aug A3,,LFP586,FALSE,.44 Mag Semi,,C4,Barbed Wire,Obs Blocker,None,None,None,None
+Mozzie,FALSE,P10 Roni,FALSE,Commando 9,,SDP 9mm,FALSE,,,Barbed Wire,C4,None,None,None,None,None
+Warden,FALSE,M590A1,TRUE,MPX,,SMG-12,FALSE,P-10C,,Shield,C4,Obs Blocker,None,None,None,None
+Goyo,FALSE,TCSG12,TRUE,Vector .45 ACP,,P229,FALSE,,,Prox,BP,Impact,None,None,None,None
+Wamai,FALSE,Aug A2,FALSE,MP5K,,Keratos .357,FALSE,P12,,Prox,None,Impact,None,None,None,None
+Oryx,TRUE,SPAS-12,TRUE,T-5 SMG,,Bailiff 410,TRUE,USP 40,,Barbed Wire,Prox,None,None,None,None,None
+Melusi,FALSE,Super 90,TRUE,MP5,,ITA12S,TRUE,RG15,,BP,None,Impact,None,None,None,None
+Aruni,TRUE,Mk 14 EBR,FALSE,P10 Roni,,PRB92,FALSE,,,Barbed Wire,BP,None,None,None,None,None
+Thunderbird,FALSE,SPAS-15,TRUE,Spear .308,,Bearing 9,FALSE,Q-929,,Barbed Wire,BP,Shield,None,None,None,None
+Thorn,FALSE,M870,TRUE,UZK50GI,,C75 Auto,FALSE,1911 Tacops,,Shield,Barbed Wire,None,None,None,None,None
+Azami,FALSE,ACS12,TRUE,9x19VSN,,D-50,FALSE,,,Barbed Wire,None,Impact,None,None,None,None
+Solis,FALSE,ITA12L,TRUE,P90,,SMG-11,FALSE,,,BP,Prox,None,None,None,None,None
+Fenrir,FALSE,SASG-12,TRUE,MP7,,Bailiff 410,TRUE,5.7 USG,,BP,Obs Blocker,None,None,None,None,None
+Tubarao,FALSE,AR-15.50,FALSE,MPX,,P226 Mk 25,FALSE,,,C4,Prox,None,None,None,None,None
+Skopos,FALSE,PCX-33,FALSE,,,P229,FALSE,,,Prox,None,Impact,None,None,None,None
