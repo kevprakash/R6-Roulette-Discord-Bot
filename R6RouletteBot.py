@@ -77,7 +77,9 @@ async def roulette(ctx, side: Option(str, choices=["Attack", "Defense"], require
     left = "◀️"
     right = "▶️"
 
-    message = await ctx.send(embed=pages[page])
+    await ctx.respond(embed=pages[page])
+
+    message = await ctx.interaction.original_response()
 
     await message.add_reaction(left)
     await message.add_reaction(right)
