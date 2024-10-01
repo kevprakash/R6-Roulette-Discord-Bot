@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 
 import discord
 from discord import Option, Member
+from DiscordUtil import PageView
 
 from Siege import opNames, getTeam
 
@@ -11,6 +12,8 @@ load_dotenv()
 TOKEN = os.getenv('BOT_TOKEN')
 
 intents = discord.Intents.default()
+intents.messages = True
+intents.reactions = True
 client = discord.Client(intents=intents)
 
 bot = discord.Bot()
@@ -28,6 +31,8 @@ async def roulette(ctx, side: Option(str, choices=["Attack", "Defense"], require
                       silly: Option(bool, required=False)):
 
     print("Received command")
+
+    ctx.timeout = None
 
     players = [player1.display_name]
     for p in [player2, player3, player4, player5]:
@@ -73,35 +78,11 @@ async def roulette(ctx, side: Option(str, choices=["Attack", "Defense"], require
 
         pages.append(embedVar)
 
-    page = 0
-    left = "◀️"
-    right = "▶️"
-
-    await ctx.respond(embed=pages[page])
-
+    await ctx.respond(embed=pages[0])
     message = await ctx.interaction.original_response()
 
-    await message.add_reaction(left)
-    await message.add_reaction(right)
+    view = PageView(pages, message)
+    await message.edit(view=view)
 
-    def check(reaction, user):
-        return reaction.message.id == message.id and str(reaction.emoji) in [left, right]
 
-    while True:
-        try:
-            reaction, user = await bot.wait_for("reaction_add", timeout=600.0, check=check)
-
-            if str(reaction.emoji) == right and page < len(pages) - 1:
-                page += 1
-                await message.edit(embed=pages[page])
-                await message.remove_reaction(reaction, user)
-
-            elif str(reaction.emoji) == left and page > 0:
-                page -= 1
-                await message.edit(embed=pages[page])
-                await message.remove_reaction(reaction, user)
-
-        except asyncio.TimeoutError:
-            await message.clear_reactions()
-            break
 bot.run(TOKEN)
