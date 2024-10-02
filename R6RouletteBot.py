@@ -18,17 +18,19 @@ client = discord.Client(intents=intents)
 
 bot = discord.Bot()
 
-operatorNames = opNames
-
+operatorAutocomplete = discord.utils.basic_autocomplete(opNames)
 
 @bot.command(description="Test")
-async def roulette(ctx, side: Option(str, choices=["Attack", "Defense"], required=True), rounds_per_half: Option(int, required=True),
-                      player1: Option(Member, required=True), player2: Option(Member, required=False),
-                      player3: Option(Member, required=False), player4: Option(Member, required=False),
-                      player5: Option(Member, required=False),
-                      ban1: Option(str, required=False), ban2: Option(str, required=False),
-                      ban3: Option(str, required=False), ban4: Option(str, required=False),
-                      silly: Option(bool, required=False)):
+async def roulette(ctx, side: Option(str, choices=["Attack", "Defense"], required=True),
+                        rounds_per_half: Option(int, required=True),
+                        player1: Option(Member, required=True), player2: Option(Member, required=False),
+                        player3: Option(Member, required=False), player4: Option(Member, required=False),
+                        player5: Option(Member, required=False),
+                        ban1: Option(str, required=False, autocomplete=operatorAutocomplete),
+                        ban2: Option(str, required=False, autocomplete=operatorAutocomplete),
+                        ban3: Option(str, required=False, autocomplete=operatorAutocomplete),
+                        ban4: Option(str, required=False, autocomplete=operatorAutocomplete),
+                        silly: Option(bool, required=False)):
 
     print("Received command")
 
