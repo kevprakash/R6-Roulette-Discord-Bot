@@ -16,7 +16,7 @@ Capitao,FALSE,PARA-308,FALSE,M249,,Gonne-6,FALSE,PRB92,,Hard Breach,EMP,Claymore
 Hibana,FALSE,Supernova,TRUE,Type-89,,Bearing 9,FALSE,P229,,Stun,None,Breach Pad,None,None,None,None
 Jackal,FALSE,ITA12L,TRUE,C7E,PDW9,ITA12S,TRUE,USP40,,Claymore,Smoke,None,None,None,None,None
 Ying,FALSE,Six12,TRUE,T-95 LSW,,Q-929,FALSE,,,Hard Breach,Smoke,None,None,None,None,None
-Zofia,TRUE,M762,FALSE,LMG-E,,RG15,FALSE,,,Claymore,None,Breach Pad,None,None,None,None
+Zofia,TRUE,M762,FALSE,LMG-E,,RG15,FALSE,,,Hard Breach,Claymore,None,None,None,None,None
 Dokkaebi,FALSE,BOSG.12.2,FALSE,Mk14 EBR,,Gonne-6,FALSE,SMG-12,C75 Auto,Smoke,EMP,Stun,None,None,None,None
 Lion,FALSE,SG-CQB,TRUE,V308,417,P9,FALSE,LFP586,,Claymore,Frag,Stun,None,None,None,None
 Finka,FALSE,SASG-12,TRUE,Spear.308,6P41,PMM,FALSE,GSH-18,,Frag,Smoke,Stun,None,None,None,None
@@ -25,7 +25,7 @@ Nomad,FALSE,AK-74M,FALSE,ARX200,,.44 Mag Semi,FALSE,PRB92,,Stun,None,Breach Pad,
 Gridlock,FALSE,F90,FALSE,M249 SAW,,Super Shorty,TRUE,SDP 9mm,,Frag,EMP,Smoke,None,None,None,None
 Nokk,FALSE,Six12 SD,TRUE,FMG-9,,5.7 USG,FALSE,D-50,,Hard Breach,EMP,Frag,None,None,None,None
 Amaru,FALSE,Supernova,TRUE,G8A1,,ITA12S,TRUE,SMG-11,Gonne-6,Hard Breach,Stun,None,None,None,None,None
-Kali,FALSE,CSRX 300,TRUE,,,SPSMG9,FALSE,C75 Auto,P226 Mk 25,Claymore,None,Breach Pad,None,None,None,None
+Kali,FALSE,CSRX 300,TRUE,,,SPSMG9,FALSE,C75 Auto,P226 Mk 25,Claymore,Smoke,Breach Pad,None,None,None,None
 Iana,FALSE,ARX200,FALSE,G36C,,Mk1 9mm,FALSE,Gonne-6,,Smoke,EMP,None,None,None,None,None
 Ace,FALSE,M1014,TRUE,AK-12,,P9,FALSE,,,Claymore,None,Breach Pad,None,None,None,None
 Zero,FALSE,SC3000K,FALSE,MP7,,5.7 USG,FALSE,Gonne-6,,Hard Breach,Claymore,None,None,None,None,None
@@ -59,7 +59,7 @@ Maestro,FALSE,ACS12,TRUE,Alda 5.56,,Bailiff 410,TRUE,Keratos .357,,Barbed Wire,O
 Alibi,FALSE,ACS12,TRUE,Mx4 Storm,,Bailiff 410,TRUE,Keratos .357,,Prox,Obs Blocker,None,None,None,None,None
 Clash,FALSE,CCE Shield,FALSE,,,Super Shorty,TRUE,SPSMG9,P-10C,Barbed Wire,Shield,Impact,None,None,None,None
 Kaid,FALSE,TCSG12,TRUE,Aug A3,,LFP586,FALSE,.44 Mag Semi,,C4,Barbed Wire,Obs Blocker,None,None,None,None
-Mozzie,FALSE,P10 Roni,FALSE,Commando 9,,SDP 9mm,FALSE,,,Barbed Wire,C4,None,None,None,None,None
+Mozzie,FALSE,P10 Roni,FALSE,Commando 9,,SDP 9mm,FALSE,,,Barbed Wire,C4,Impact,None,None,None,None
 Warden,FALSE,M590A1,TRUE,MPX,,SMG-12,FALSE,P-10C,,Shield,C4,Obs Blocker,None,None,None,None
 Goyo,FALSE,TCSG12,TRUE,Vector .45 ACP,,P229,FALSE,,,Prox,BP,Impact,None,None,None,None
 Wamai,FALSE,Aug A2,FALSE,MP5K,,Keratos .357,FALSE,P12,,Prox,None,Impact,None,None,None,None

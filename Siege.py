@@ -21,7 +21,10 @@ roleDictAtk = {
 
 
 def getLoadout(attacker, requiredTag=None, takenOps=(), seriousMode=False):
-    filteredData = operatorData[operatorData["Attacker"] == attacker]
+    if attacker is not None:
+        filteredData = operatorData[operatorData["Attacker"] == attacker]
+    else:
+        filteredData = operatorData
     filteredData = filteredData[~filteredData["Operator"].isin(takenOps)]
     if requiredTag is not None:
         filteredData = filteredData[filteredData[requiredTag]]
@@ -54,6 +57,8 @@ def fixAndTranslateLoadout(op, primary, secondary, gadget, requiredTag, opData, 
     pShotgun = (primary == 1) and (operatorLoadout["P1 Shotgun"].all())
     sShotgun = (secondary == 1) and (operatorLoadout["S1 Shotgun"].all())
 
+    seriousShotgun = op in ["Smoke", "Mute", "Warden", "Kaid", "Goyo", "Alibi", "Maestro", "Kali", "Deimos", "Amaru"]
+
     if requiredTag == "HBreach":
         if operatorLoadout["G1"].iloc[0] == "Hard Breach":
             g = "Hard Breach"
@@ -63,16 +68,25 @@ def fixAndTranslateLoadout(op, primary, secondary, gadget, requiredTag, opData, 
     elif requiredTag == "SBreach":
         if operatorLoadout["Gadget SD"].iloc[0]:
             pass
-        elif operatorLoadout["S1 Shotgun"].all():
-            s = operatorLoadout["S1"].iloc[0]
-            sShotgun = True
-        elif operatorLoadout["G3"].isin(["Breach Pad", "Impact"]).all():
-            g = operatorLoadout["G3"].iloc[0]
-        elif operatorLoadout["P1 Shotgun"].all():
-            p = operatorLoadout["P1"].iloc[0]
-            pShotgun = True
+        elif not seriousMode:
+            if operatorLoadout["S1 Shotgun"].all():
+                s = operatorLoadout["S1"].iloc[0]
+                sShotgun = True
+            elif operatorLoadout["G3"].isin(["Breach Pad", "Impact"]).all():
+                g = operatorLoadout["G3"].iloc[0]
+            elif operatorLoadout["P1 Shotgun"].all():
+                p = operatorLoadout["P1"].iloc[0]
+                pShotgun = True
+        else:
+            if seriousShotgun and operatorLoadout["P1 Shotgun"].all():
+                p = operatorLoadout["P1"].iloc[0]
+                pShotgun = True
+            elif operatorLoadout["S1 Shotgun"].all():
+                s = operatorLoadout["S1"].iloc[0]
+                sShotgun = True
+            elif operatorLoadout["G3"].isin(["Breach Pad", "Impact"]).all():
+                g = operatorLoadout["G3"].iloc[0]
 
-    seriousShotgun = op in ["Smoke", "Mute", "Warden", "Kaid", "Goyo", "Alibi", "Maestro", "Kali", "Deimos", "Amaru"]
     if (pShotgun and sShotgun) or (seriousMode and pShotgun and (not seriousShotgun)):
         primary = randint(2, opData["Primaries"]) if opData["Primaries"] > 2 else 2
 

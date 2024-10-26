@@ -6,7 +6,7 @@ import discord
 from discord import Option, Member
 from DiscordUtil import PageView
 
-from Siege import opNames, getTeam
+from Siege import opNames, getTeam, getLoadout
 
 load_dotenv()
 TOKEN = os.getenv('BOT_TOKEN')
@@ -20,7 +20,7 @@ bot = discord.Bot()
 
 operatorAutocomplete = discord.utils.basic_autocomplete(opNames)
 
-@bot.command(description="Test")
+@bot.command(description="Get a random loadouts for the current match")
 async def roulette(ctx, side: Option(str, choices=["Attack", "Defense"], required=True),
                         rounds_per_half: Option(int, required=True),
                         player1: Option(Member, required=True), player2: Option(Member, required=False),
@@ -56,8 +56,9 @@ async def roulette(ctx, side: Option(str, choices=["Attack", "Defense"], require
             t = "Round " + str(r + 1)
             s = side == "Defense"
         else:
-            t = "OT " + ("Attack " if (r - rounds_per_half * 2 < 2) else "Defense ") + str((r % 2) + 1)
-            s = r % 2 == 0
+            isAttack = (r - rounds_per_half * 2 < 2)
+            t = "OT " + ("Attack " if isAttack else "Defense ") + str((r % 2) + 1)
+            s = isAttack
 
         silly = silly if silly is not None else False
         loadouts = getTeam(s, players, bans, seriousMode=not silly)
@@ -86,5 +87,17 @@ async def roulette(ctx, side: Option(str, choices=["Attack", "Defense"], require
     view = PageView(pages, message)
     await message.edit(view=view)
 
+
+@bot.command(description="Get a random loadout for FFA/TDM")
+async def roulette_dm(ctx, silly: Option(bool, required=False)):
+    silly = silly if silly is not None else False
+    op, _, primary, secondary, _ = getLoadout(None, seriousMode=not silly)
+
+    response = "Primary: " + primary + "\n"
+    response += "Secondary: " + secondary
+
+    embedVar = discord.Embed(title="DM Loadout", color=0x00ff00)
+    embedVar.add_field(name=op, value=response, inline=False)
+    await ctx.respond(embed=embedVar, ephemeral=True)
 
 bot.run(TOKEN)
